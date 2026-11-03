@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio pribadi siswa SMK">
+  <title>Portofolio | Nayla</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    try {
+      const saved = localStorage.getItem("portfolio-theme");
+      const preferred = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.dataset.theme = saved || preferred;
+    } catch (e) {}
+  </script>
+</head>
+
+<body>
+  <div class="page-grid"></div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="brand">
+        <span class="brand-mark">N</span>
+        <span>Nayla's<span class="brand-dot">.</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Aktifkan mode gelap">☾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section class="hero section container" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          <span class="mono">// This is my portfolio!</span>
+        </p>
+
+        <p class="hero-kicker">Hai, Saya</p>
+
+        <h1>
+          <span class="name-highlight">Nayla Azkia</span><br>
+          Berkarya<br>
+          <span class="serif-accent">menciptakan inovasi</span>
+        </h1>
+
+        <p class="hero-description">
+          Pelajar Jurusan PPLG yang berfokus pada pengembangan keterampilan,
+          eksplorasi ide kreatif, dan pemanfaatan teknologi.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="button button-primary">Lihat project ↗</a>
+          <a href="#contact" class="button button-secondary">Hubungi saya</a>
+        </div>
+
+        <div class="hero-meta">
+          <span class="meta-line"></span>
+          <span>Kelas XI - Stematelpwt</span>
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="hero-blob"></div>
+        <div class="orbit orbit-one"></div>
+
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            <img src="assets/profiel.png" alt="Foto profil saya" class="hero-photo">
+          </div>
+        </div>
+
+        <div class="floating-card floating-code">
+          <span class="floating-icon">⌘</span>
+          <span>
+            <strong>Creative mind</strong>
+            <small>Always learning</small>
+          </span>
+        </div>
+
+        <div class="floating-card floating-school">
+          <span class="school-icon">✦</span>
+          <span>
+            <strong>Student</strong>
+            <small>SMK · Indonesia</small>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
+        <p class="section-label mono">// about_me</p>
+        <h2>Sedikit <br><span class="serif-accent">tentang saya.</span></h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-note reveal">
+          <span class="note-mark">“</span>
+          <p>
+            Saya percaya bahwa setiap hal besar selalu dimulai dari rasa ingin
+            tahu, keberanian mencoba, dan kemauan untuk terus belajar.
+          </p>
+          <span class="note-signature mono">— Prinsip Nayla</span>
+        </div>
+
+        <div class="about-content reveal">
+          <p>
+            Perkenalkan, Saya <strong>Nayla Azkia Rahmatika</strong>, siswa
+            <strong>SMK TELKOM PURWOKERTO</strong> jurusan
+            <strong>PPLG (Pengembangan Perangkat Lunak dan Game)</strong>
+            yang memiliki minat dalam dunia teknologi, khususnya pengembangan
+            website dan desain digital.
+          </p>
+
+          <p>
+            Bagi saya, setiap project merupakan kesempatan untuk belajar,
+            mengeksplorasi kreativitas, dan meningkatkan kemampuan. Saya
+            percaya bahwa proses belajar yang konsisten dapat menghasilkan
+            karya yang semakin baik.
+          </p>
+
+          <div class="about-facts">
+            <div class="fact">
+              <span class="fact-icon">⌂</span>
+              <div>
+                <small>Pendidikan</small>
+                <strong>SMK Telkom Purwokerto</strong>
+              </div>
+            </div>
+
+            <div class="fact">
+              <span class="fact-icon">✳</span>
+              <div>
+                <small>Minat</small>
+                <strong>UI/UX Design</strong>
+              </div>
+            </div>
+
+            <div class="fact">
+              <span class="fact-icon">↗</span>
+              <div>
+                <small>Fokus sekarang</small>
+                <strong>Pengembangan website</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-row reveal">
+        <div class="stat">
+          <strong>01</strong>
+          <span>Design<p>UI/UX Design</p></span>
+        </div>
+        <div class="stat">
+          <strong>02</strong>
+          <span>Explore<p>Eksplorasi ide dan teknologi baru</p></span>
+        </div>
+        <div class="stat">
+          <strong>03</strong>
+          <span>Web Development<p>Pengembangan website</p></span>
+        </div>
+      </div>
+
+      <p class="small-note mono">* Mengembangkan ide melalui kreativitas dan teknologi.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-soft" id="skills">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="section-label mono">// skills</p>
+          <h2>Hal yang sedang<br><span class="serif-accent">dikembangkan.</span></h2>
+          <p class="section-intro">Kemampuan teknis dan kebiasaan yang terus saya latih.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-panel reveal">
+            <div class="panel-title">
+              <span class="panel-icon">⌘</span>
+              <div>
+                <h3>Hard skills</h3>
+                <p>Kemampuan teknis</p>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-label">
+                  <span>UI/UX Design</span>
+                  <span class="skill-level">Terus berkembang</span>
+                </div>
+                <div class="skill-track"><span style="--skill-width:90%"></span></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label">
+                  <span>Web Development</span>
+                  <span class="skill-level">Menengah</span>
+                </div>
+                <div class="skill-track"><span style="--skill-width:72%"></span></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label">
+                  <span>Graphic Design</span>
+                  <span class="skill-level">Terus berkembang</span>
+                </div>
+                <div class="skill-track"><span style="--skill-width:88%"></span></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-label">
+                  <span>Database Management</span>
+                  <span class="skill-level">Dasar</span>
+                </div>
+                <div class="skill-track"><span style="--skill-width:78%"></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-panel reveal">
+            <div class="panel-title">
+              <span class="panel-icon olive-icon">✳</span>
+              <div>
+                <h3>Soft skills</h3>
+                <p>Kebiasaan yang dibangun</p>
+              </div>
+            </div>
+
+            <div class="soft-skill-list">
+              <article class="soft-skill">
+                <span class="soft-number">01</span>
+                <div>
+                  <h4>Kerja sama</h4>
+                  <p>Mendengarkan ide dan menyelesaikan tugas bersama tim.</p>
+                </div>
+              </article>
+
+              <article class="soft-skill">
+                <span class="soft-number">02</span>
+                <div>
+                  <h4>Problem solving</h4>
+                  <p>Memahami masalah sebelum mencari solusi.</p>
+                </div>
+              </article>
+
+              <article class="soft-skill">
+                <span class="soft-number">03</span>
+                <div>
+                  <h4>Komunikasi</h4>
+                  <p>Menyampaikan ide dengan jelas dan menghargai pendapat.</p>
+                </div>
+              </article>
+
+              <article class="soft-skill">
+                <span class="soft-number">04</span>
+                <div>
+                  <h4>Konsisten belajar</h4>
+                  <p>Terus berlatih dan memperbaiki hasil dari masukan.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section container" id="projects">
+      <div class="projects-heading reveal">
+        <div class="section-heading">
+          <p class="section-label mono">// projects</p>
+          <h2>Projects <br><span class="serif-accent">yang telah dibuat</span></h2>
+        </div>
+        <p class="projects-intro">Kumpulan latihan dan proyek dari perjalanan belajarku.</p>
+      </div>
+
+      <div class="project-toolbar reveal">
+        <div class="filter-list">
+          <button class="filter-button active" data-filter="all">Semua</button>
+          <button class="filter-button" data-filter="kelas10">Kelas 10</button>
+          <button class="filter-button" data-filter="kelas11">Kelas 11</button>
+        </div>
+        <span class="project-count mono" id="projectCount">09 PROJECTS</span>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal" data-category="kelas10" data-project="0">
+          <button class="project-open" type="button" aria-label="Lihat detail Matcha Wave UI UX">
+            <div class="project-visual project-image-wrap">
+              <img src="assets/project-matcha-ui.png" alt="Preview Matcha Wave UI UX" loading="lazy">
+              <span class="visual-index mono">KELAS 10 / PROJECT 01</span>
+              <span class="project-image-hint">Lihat detail ↗</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">UI/UX Design</span>
+                <span class="project-arrow">↗</span>
+              </div>
+              <h3>Matcha Wave — UI/UX Design</h3>
+              <p>Desain antarmuka website bertema matcha dengan nuansa hijau yang segar. Rancangan ini menampilkan halaman utama, pilihan menu, kategori produk, dan halaman login.</p>
+              <div class="tag-list"><span>Figma</span><span>UI/UX Design</span><span>Web Design</span></div>
+            </div>
+          </button>
+        </article>
+
+        <article class="project-card reveal" data-category="kelas10" data-project="1">
+          <button class="project-open" type="button" aria-label="Lihat detail Catalya Cake">
+            <div class="project-visual project-image-wrap">
+              <img src="assets/project-catalya.png" alt="Preview Catalya Cake" loading="lazy">
+              <span class="visual-index mono">KELAS 10 / PROJECT 02</span>
+              <span class="project-image-hint">Lihat detail ↗</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">UI/UX Design</span>
+                <span class="project-arrow">↗</span>
+              </div>
+              <h3>Catalya Cake — UI/UX Design</h3>
+              <p>Rancangan website toko kue dengan tampilan bernuansa pink. Berisi halaman Home, Our Menu, About Us, Contact, Login, dan form pemesanan.</p>
+              <div class="tag-list"><span>Figma</span><span>UI/UX Design</span><span>E-Commerce</span></div>
+            </div>
+          </button>
+        </article>
+
+        <article class="project-card reveal" data-category="kelas10" data-project="2">
+          <button class="project-open" type="button" aria-label="Lihat detail Magic Forest">
+            <div class="project-visual project-image-wrap">
+              <img src="assets/project-magic-forest.png" alt="Preview Magic Forest" loading="lazy">
+              <span class="visual-index mono">KELAS 10 / PROJECT 03</span>
+              <span class="project-image-hint">Lihat detail ↗</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">Game Development</span>
+                <span class="project-arrow">↗</span>
+              </div>
+              <h3>Magic Forest — Game</h3>
+              <p>Game bertema petualangan dengan suasana hutan fantasi. Project ini dibuat sebagai eksplorasi pembuatan game dan interaksi pemain.</p>
+              <div class="tag-list"><span>GDevelop</span><span>Game Design</span><span>Game Development</span></div>
+            </div>
+          </button>
+        </article>
+
+        <article class="project-card reveal" data-category="kelas10" data-project="3">
+          <button class="project-open" type="button" aria-label="Lihat detail Matcha Wave Website">
+            <div class="project-visual project-image-wrap">
+              <img src="assets/project-matcha-web.jpg" alt="Preview Matcha Wave Website" loading="lazy">
+              <span class="visual-index mono">KELAS 10 / PROJECT 04</span>
+              <span class="project-image-hint">Lihat detail ↗</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">Web Development</span>
+                <span class="project-arrow">↗</span>
+              </div>
+              <h3>Matcha Wave — Website</h3>
+              <p>Implementasi website bertema matcha yang dikembangkan dari konsep desain Matcha Wave. Website menampilkan informasi produk dan pilihan menu pecinta matcha.</p>
+              <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+          </button>
+        </article>
+
+        <article class="project-card reveal" data-category="kelas11" data-project="4">
+          <button class="project-open" type="button" aria-label="Lihat detail Grab">
+            <div class="project-visual project-image-wrap">
+              <img src="assets/project-grab.png" alt="Preview Grab" loading="lazy">
+              <span class="visual-index mono">KELAS 11 / PROJECT 05</span>
+              <span class="project-image-hint">Lihat detail ↗</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">UI/UX Design</span>
+                <span class="project-arrow">↗</span>
+              </div>
+              <h3>Grab — Mobile App Redesign</h3>
+              <p>Eksplorasi desain antarmuka aplikasi mobile dengan referensi tampilan layanan Grab, meliputi Beranda, Pembayaran, Aktivitas, dan Kontak Masuk.</p>
+              <div class="tag-list"><span>Figma</span><span>Mobile UI</span><span>UI/UX Design</span></div>
+            </div>
+          </button>
+        </article>
+
+        <article class="project-card reveal" data-category="kelas11" data-project="5">
+          <button class="project-open" type="button" aria-label="Lihat detail Dashboard PayPocket">
+            <div class="project-visual project-image-wrap">
+              <img src="assets/project-paypocket.png" alt="Preview Dashboard PayPocket" loading="lazy">
+              <span class="visual-index mono">KELAS 11 / PROJECT 06</span>
+              <span class="project-image-hint">Lihat detail ↗</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">Dashboard UI</span>
+                <span class="project-arrow">↗</span>
+              </div>
+              <h3>PayPocket — Dashboard</h3>
+              <p>Desain dashboard bertema ungu yang menampilkan ringkasan keuangan, saldo, pendapatan, grafik, dan navigasi menu.</p>
+              <div class="tag-list"><span>Figma</span><span>Dashboard</span><span>Data Visualization</span></div>
+            </div>
+          </button>
+        </article>
+
+        <article class="project-card reveal" data-category="kelas11" data-project="6">
+          <button class="project-open" type="button" aria-label="Lihat detail Artora">
+            <div class="project-visual project-image-wrap">
+              <img src="assets/project-artora.png" alt="Preview Artora" loading="lazy">
+              <span class="visual-index mono">KELAS 11 / PROJECT 07</span>
+              <span class="project-image-hint">Lihat detail ↗</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">UI/UX E-Commerce</span>
+                <span class="project-arrow">↗</span>
+              </div>
+              <h3>Artora — E-Commerce Website</h3>
+              <p>Rancangan website e-commerce produk digital dengan warna hangat. Memuat Home, Shop, Categories, Custom Design, About Us, dan Keranjang.</p>
+              <div class="tag-list"><span>Figma</span><span>UI/UX Design</span><span>E-Commerce</span></div>
+            </div>
+          </button>
+        </article>
+
+        <article class="project-card reveal" data-category="kelas11" data-project="7">
+          <button class="project-open" type="button" aria-label="Lihat detail E-Commerce Mobile Mockup">
+            <div class="project-visual project-image-wrap">
+              <img src="assets/project-artora-mobile.png" alt="Preview E-Commerce Mobile Mockup" loading="lazy">
+              <span class="visual-index mono">KELAS 11 / PROJECT 08</span>
+              <span class="project-image-hint">Lihat detail ↗</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">Mobile UI Mockup</span>
+                <span class="project-arrow">↗</span>
+              </div>
+              <h3>E-Commerce — Mobile Mockup</h3>
+              <p>Eksplorasi wireframe dan mockup tampilan e-commerce pada perangkat mobile, mulai dari halaman utama hingga susunan katalog.</p>
+              <div class="tag-list"><span>Figma</span><span>Wireframe</span><span>Mobile UI</span></div>
+            </div>
+          </button>
+        </article>
+
+        <article class="project-card reveal" data-category="kelas11" data-project="8">
+          <button class="project-open" type="button" aria-label="Lihat detail Agent Protocol">
+            <div class="project-visual project-image-wrap">
+              <img src="assets/project-agent.png" alt="Preview Agent Protocol" loading="lazy">
+              <span class="visual-index mono">KELAS 11 / PROJECT 09</span>
+              <span class="project-image-hint">Lihat detail ↗</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-type">Educational Game</span>
+                <span class="project-arrow">↗</span>
+              </div>
+              <h3>Agent Protocol — Game Edukasi</h3>
+              <p>Game edukasi matematika bertema agen rahasia. Pemain menyelesaikan misi melalui materi nilai fungsi, komposisi fungsi, dan invers.</p>
+              <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Educational Game</span></div>
+            </div>
+          </button>
+        </article>
+
+      </div>
+
+      <p class="small-note mono">* Klik project untuk melihat deskripsi, proses, tools, dan tautan karya.</p>
+    </section>
+
+    <!-- CONTACT -->
+<section class="section contact-section" id="contact">
+  <div class="container contact-layout">
+
+    <div class="contact-copy reveal">
+      <p class="section-label mono">// say_hello</p>
+      <h2>Punya ide?<br><span class="serif-accent">Mari terhubung.</span></h2>
+      <p>Terima kasih sudah mampir. Kamu bisa menghubungiku untuk berdiskusi, berbagi ide, atau sekadar menyapa.</p>
+
+      <div class="contact-links">
+        <a class="contact-link" href="https://github.com/541251220-blip" target="_blank">
+          <span class="social-symbol">⌘</span>
+          <span><small>GitHub</small><strong>nayla_azkia</strong></span>
+          <span>↗</span>
+        </a>
+
+        <a class="contact-link" href="https://www.instagram.com/neyilaa_?exln=MTIwenBvYjN6OG9hdQ==" target="_blank">
+          <span class="social-symbol">@</span>
+          <span><small>Instagram</small><strong>@neyilaa</strong></span>
+          <span>↗</span>
+        </a>
+
+        <a class="contact-link" href="https://mail.google.com/mail/u/0/?hl=en#inbox" target="_blank">
+          <span class="social-symbol">G</span>
+          <span><small>Gmail</small><strong>nayla.azkia8000@gmail.com</strong></span>
+          <span>↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="email-card reveal">
+      <div class="email-card-heading">
+        <span class="email-icon">✉</span>
+        <div>
+          <h3>Kirim Pesan</h3>
+          <p>Ada sesuatu yang ingin disampaikan?</p>
+        </div>
+      </div>
+
+      <form id="emailForm" class="email-form">
+        <label for="senderName">Nama</label>
+        <input type="text" id="senderName" placeholder="Masukkan nama kamu" required>
+
+        <label for="senderEmail">Email</label>
+        <input type="email" id="senderEmail" placeholder="nama@email.com" required>
+
+        <label for="emailSubject">Subjek</label>
+        <input type="text" id="emailSubject" placeholder="Tuliskan subjek pesan" required>
+
+        <label for="emailMessage">Pesan</label>
+        <textarea id="emailMessage" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea>
+
+        <button type="submit" class="button button-primary email-submit">
+          Kirim Pesan ↗
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark">N</span>
+        <span>portfolio nayla's<span class="brand-dot">.</span></span>
+      </a>
+
+      <p>Designed & Developed with Creativity.</p>
+
+      <div class="footer-right">
+        <span>© <span id="year"></span> neyla's projects</span>
+        <a href="#home">Kembali ke atas ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL DETAIL PROJECT -->
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <div class="modal-panel">
+      <button class="modal-close" id="modalClose" aria-label="Tutup">×</button>
+
+      <p class="section-label mono">// project_details</p>
+
+      <div class="modal-visual" id="modalVisual">
+        <img id="modalImage" src="" alt="Preview project">
+      </div>
+
+      <p class="project-type" id="modalType"></p>
+      <h2 id="modalTitle">Nama proyek</h2>
+      <p id="modalDescription" class="modal-description"></p>
+
+      <div class="modal-detail-grid">
+        <div>
+          <h3>Yang dipelajari</h3>
+          <p id="modalLearning"></p>
+        </div>
+
+        <div class="modal-full-detail">
+          <h3>Gambaran project</h3>
+          <p id="modalFeatures"></p>
+        </div>
+
+        <div>
+          <h3>Teknologi</h3>
+          <div id="modalTags" class="tag-list"></div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <a class="button button-primary" id="modalDemo" href="#" target="_blank" rel="noreferrer">Lihat project ↗</a>
+        <a class="button button-secondary" id="modalSource" href="#" target="_blank" rel="noreferrer">Source code ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
